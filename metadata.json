@@ -1,0 +1,8 @@
+{
+  "name": "Market Crash Archive",
+  "description": "An authoritative historical research and editorial archive documenting major global and Indian stock market crashes, their causes, economic consequences, recovery cycles, and timeless investor lessons.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
