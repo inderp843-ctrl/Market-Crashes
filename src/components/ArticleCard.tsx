@@ -21,7 +21,8 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ crash, featured = fals
           <Link to={crash.routePath} tabIndex={-1} aria-hidden="true" className="block w-full h-full">
             <img
               src={crash.featuredImage}
-              alt={crash.imageAlt || `${crash.title} historical record photograph`}
+              alt={crash.imageAlt}
+              title={crash.imageTitle}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               loading="lazy"
             />

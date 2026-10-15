@@ -203,21 +203,29 @@ export const CrashDetail: React.FC = () => {
             <div className="relative aspect-[16/9] sm:aspect-[21/9] max-h-[460px] overflow-hidden">
               <img
                 src={crash.featuredImage}
-                alt={crash.imageAlt || `${crash.title} archival photograph`}
+                alt={crash.imageAlt}
+                title={crash.imageTitle}
                 className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
                 loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#070d1e]/90 via-black/25 to-transparent pointer-events-none" />
-              <div className="absolute bottom-3 left-4 right-4 text-xs sm:text-sm text-white font-medium drop-shadow-md">
+              <figcaption className="absolute bottom-3 left-4 right-4 text-xs sm:text-sm text-white font-medium drop-shadow-md">
                 {crash.imageCaption}
-              </div>
+              </figcaption>
             </div>
-            <div className="px-4 py-2 bg-slate-100 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500">
-              <span className="flex items-center gap-1.5">
-                <BookOpen className="w-3 h-3 text-slate-400" />
-                <span><strong>Archival Photograph:</strong> Historical record documenting {crash.shortTitle}</span>
-              </span>
-              <span className="font-mono text-slate-600">Alt tag: "{crash.imageAlt}"</span>
+            <div className="px-5 py-3.5 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
+              <div className="space-y-0.5">
+                <span className="font-semibold text-slate-900 block font-serif-title">
+                  {crash.imageTitle}
+                </span>
+                <p className="text-[11px] text-slate-600 leading-relaxed max-w-3xl">
+                  {crash.imageDescription}
+                </p>
+              </div>
+              <div className="shrink-0 flex items-center gap-1.5 text-[11px] font-mono text-slate-500 bg-white px-2.5 py-1 rounded border border-slate-200">
+                <span className="text-slate-400">Alt:</span>
+                <span className="text-slate-700 font-medium">"{crash.imageAlt}"</span>
+              </div>
             </div>
           </figure>
         )}

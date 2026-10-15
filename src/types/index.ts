@@ -61,7 +61,9 @@ export interface CrashArticle {
   metaDescription: string;
   featuredImage: string;
   imageAlt: string;
+  imageTitle: string;
   imageCaption: string;
+  imageDescription: string;
 
   // AEO - Answer Engine Optimization
   aeoQuestions: AeoQnaItem[];

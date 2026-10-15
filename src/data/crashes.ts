@@ -36,8 +36,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'Wall Street Crash of 1929: Causes, Facts & Timeline',
     metaDescription: 'Comprehensive history of the Wall Street Crash of 1929. Discover the true causes of the 1929 stock market crash and its link to the Great Depression.',
     featuredImage: img1929,
-    imageAlt: 'Crowd of investors and citizens gathered outside the New York Stock Exchange during the Wall Street Crash of 1929',
+    imageAlt: 'Crowds gathered outside the New York Stock Exchange during the 1929 Wall Street Crash',
+    imageTitle: 'Anxious Crowds Outside NYSE on Black Thursday (October 1929)',
     imageCaption: 'Anxious crowds gathering on Broad Street outside the New York Stock Exchange during late October 1929.',
+    imageDescription: 'Archival photograph documenting thousands of investors and city residents assembled outside the NYSE facade following the Black Thursday panic and broker margin calls.',
 
     // AEO - Answer Engine Optimization
     aeoQuestions: [
@@ -160,8 +162,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'Black Monday 1987: Causes, Single-Day Drop & Recovery',
     metaDescription: 'Discover how Black Monday 1987 erased 22.6% in a single day. Learn about computerized portfolio insurance, the Brady Commission, and the 20-month recovery.',
     featuredImage: img1987,
-    imageAlt: 'Floor traders on the New York Stock Exchange floor in frantic chaos during Black Monday October 19, 1987',
+    imageAlt: 'Frantic floor traders on the New York Stock Exchange during the Black Monday 1987 crash',
+    imageTitle: 'NYSE Floor Turmoil During Black Monday (October 19, 1987)',
     imageCaption: 'Trading floor chaos on October 19, 1987, as the Dow dropped 508 points (-22.61%) in six hours.',
+    imageDescription: 'Historical photograph of specialist traders knee-deep in order paper slips on the NYSE trading floor as automated portfolio insurance accelerated market drops.',
 
     aeoQuestions: [
       {
@@ -272,8 +276,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'Asian Financial Crisis 1997: Causes, Currency & Impact',
     metaDescription: 'Detailed history of the 1997 Asian Financial Crisis. Explore how the Thai Baht devaluation, unhedged foreign debt, and contagion plunged Asian markets 85%.',
     featuredImage: img1997,
-    imageAlt: 'Currency exchange dealers and stock traders in Bangkok and Hong Kong during the July 1997 Asian Financial Crisis',
+    imageAlt: 'Currency dealers monitoring plunging exchange rates during the 1997 Asian Financial Crisis',
+    imageTitle: 'Asian Foreign Exchange Dealing Desks During Currency Contagion (1997)',
     imageCaption: 'Trading desks in Bangkok on July 2, 1997, as the Thai Baht was floated, triggering regional market drops.',
+    imageDescription: 'Trading room photograph showing financial analysts tracking depreciating Asian currencies following Thailand’s central bank decision to abandon the Baht currency peg.',
 
     aeoQuestions: [
       {
@@ -384,8 +390,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'Dot-Com Bubble Crash: Causes, Tech Bust & Timeline',
     metaDescription: 'Complete case study of the 2000 Dot-Com Bubble Crash. Analyze why the NASDAQ plunged 78%, zero-revenue IPOs collapsed, and the 15-year recovery horizon.',
     featuredImage: img2000,
-    imageAlt: 'Crowded trading room surrounded by CRT monitors watching the NASDAQ tech stocks plummet in March 2000',
+    imageAlt: 'Traders watching falling tech stock quotes on NASDAQ screens during the 2000 dot-com crash',
+    imageTitle: 'NASDAQ Technology Equities Plunge During Dot-Com Burst (2000)',
     imageCaption: 'Stressed tech investors watching CRT terminal screens on NASDAQ during the peak of the dot-com bubble collapse in 2000.',
+    imageDescription: 'Archival early-2000s photograph depicting institutional market participants monitoring falling stock quotes across internet startups on CRT computer terminals.',
 
     aeoQuestions: [
       {
@@ -498,8 +506,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'Global Financial Crisis of 2008: Timeline, Causes & Recovery',
     metaDescription: 'Complete history of the Global Financial Crisis of 2008. Explore the 2008 financial crisis timeline, why the stock market crashed, and the 49-month recovery.',
     featuredImage: img2008,
-    imageAlt: 'Wall Street newspaper kiosk reporting Lehman Brothers bankruptcy collapse during the Global Financial Crisis of 2008',
+    imageAlt: 'Newspaper headlines reporting Lehman Brothers bankruptcy collapse during the Global Financial Crisis of 2008',
+    imageTitle: 'Lehman Brothers Bankruptcy and the 2008 Financial Crisis Freeze',
     imageCaption: 'Employees leaving Lehman Brothers headquarters in New York on September 15, 2008, after the firm filed for Chapter 11 bankruptcy.',
+    imageDescription: 'Documentary photograph showing media headlines and employees carrying packing boxes outside Lehman Brothers Manhattan headquarters following the subprime credit freeze.',
 
     // AEO - Answer Engine Optimization
     aeoQuestions: [
@@ -615,8 +625,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'Flash Crash of 2010: High-Frequency Trading Chaos',
     metaDescription: 'Discover what caused the May 6, 2010 Flash Crash. Learn how automated algorithms, spoofing, and vanishing liquidity dropped the Dow 1,000 points in 20 minutes.',
     featuredImage: img2010,
-    imageAlt: 'Quantitative electronic trading desk with multi-monitor terminals during the May 6 2010 Flash Crash',
+    imageAlt: 'Electronic trading monitors displaying the 998-point intraday drop during the May 2010 Flash Crash',
+    imageTitle: 'Intraday Liquidity Evaporation During the May 6, 2010 Flash Crash',
     imageCaption: 'Trading screens displaying the vertical intraday plunge on May 6, 2010, when the Dow dropped nearly 1,000 points in minutes.',
+    imageDescription: 'Multi-monitor trading terminal photograph recording the steep, near-vertical downward spike in the Dow Jones caused by algorithmic execution and HFT bid withdrawal.',
 
     aeoQuestions: [
       {
@@ -721,8 +733,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'China Stock Market Crash 2015: Margin Debt & Contagion',
     metaDescription: 'Analyze the 2015 China stock market crash. Discover how shadow margin umbrella trusts inflated the Shanghai index before a devastating 43% plunge.',
     featuredImage: img2015,
-    imageAlt: 'Chinese retail investors looking up with deep anxiety at the electronic stock price boards in Shanghai during the 2015 crash',
+    imageAlt: 'Retail investors in Shanghai watching falling share prices during the 2015 China stock market crash',
+    imageTitle: 'Shanghai Retail Investors Confronting Leveraged Margin Unwinds (2015)',
     imageCaption: 'Investors in a Shanghai securities brokerage hall in July 2015 watching the Shanghai Composite drop over 5% in a single session.',
+    imageDescription: 'Photojournalistic image of individual investors in a Chinese brokerage gallery observing tumbling equity indices following regulatory clampdowns on shadow margin debt.',
 
     aeoQuestions: [
       {
@@ -832,8 +846,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: '2018 Market Selloff: Volmageddon & Christmas Eve Low',
     metaDescription: 'Analyze the 2018 stock market selloff. Explore the February Volmageddon short-VIX blowup, Fed quantitative tightening, and the 2019 Powell Pivot recovery.',
     featuredImage: img2018,
-    imageAlt: 'Wall Street trading floor with multi-monitor desk showing S&P 500 downward trend during late 2018 market selloff',
+    imageAlt: 'Wall Street trading desk monitoring S&P 500 volatility during the 2018 market sell-off',
+    imageTitle: 'S&P 500 Volatility Spike and Monetary Tightening (Late 2018)',
     imageCaption: 'Traders at the NYSE reacting to spiking volatility and Federal Reserve rate hike announcements in late 2018.',
+    imageDescription: 'Trading desk photograph showing multiple financial screens tracking market sell-offs across equity indices during the fourth-quarter 2018 Fed rate hike cycle.',
 
     aeoQuestions: [
       {
@@ -944,8 +960,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: 'COVID-19 Stock Market Crash of 2020: Causes & Recovery',
     metaDescription: 'Explore the COVID-19 stock market crash of 2020. Understand the primary 2020 stock market crash causes and the rapid coronavirus stock market recovery in 5 months.',
     featuredImage: img2020,
-    imageAlt: 'Electronic trading room screens displaying trading halts and market-wide circuit breaker notifications during the COVID-19 market crash in March 2020',
+    imageAlt: 'Trading floor monitors showing circuit breaker halts during the COVID-19 stock market crash',
+    imageTitle: 'Market-Wide Circuit Breakers Triggered: COVID-19 March 2020 Plunge',
     imageCaption: 'Trading room screens during March 2020 showing market-wide circuit breaker Level 1 halts and steep downward equity curves.',
+    imageDescription: 'Photograph of electronic trading screens displaying automatic regulatory Level 1 trading halt notifications as coronavirus lockdowns triggered a worldwide dash for cash.',
 
     // AEO - Answer Engine Optimization
     aeoQuestions: [
@@ -1062,8 +1080,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: '2022 Bear Market: Inflation Surge & Tech Stock De-rating',
     metaDescription: 'Explore the 2022 bear market: 40-year-high inflation, 425 bps of Federal Reserve interest rate hikes, NASDAQ sell-off, and the 24-month recovery to new highs.',
     featuredImage: img2022,
-    imageAlt: 'Financial news monitor and NASDAQ MarketSite ticker displaying 40-year high inflation graphics and interest rate hikes in 2022',
+    imageAlt: 'Financial news ticker displaying 40-year-high inflation figures and interest rate hikes in 2022',
+    imageTitle: '2022 Global Bear Market: Inflation Surge and Central Bank Rate Hikes',
     imageCaption: 'Broadcast screens in 2022 detailing the fastest global rate-hiking cycle in four decades and its impact on equities.',
+    imageDescription: 'Financial media photograph depicting news tickers reporting 9.1% inflation data alongside Federal Reserve 75-basis-point interest rate increase announcements.',
 
     aeoQuestions: [
       {
@@ -1176,8 +1196,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: '1992 Harshad Mehta Scam: BSE Sensex Crash & SEBI Reforms',
     metaDescription: 'Discover the full story of the 1992 Harshad Mehta securities scam, fraudulent Bank Receipts, the 54% BSE Sensex crash, and the birth of modern SEBI regulation.',
     featuredImage: img1992,
-    imageAlt: 'Trading ring on the floor of the Bombay Stock Exchange in 1992 during the Harshad Mehta securities scam crisis',
+    imageAlt: 'Bombay Stock Exchange open-outcry trading ring during the 1992 Harshad Mehta securities scam crash',
+    imageTitle: 'Historic BSE Trading Ring During the 1992 Harshad Mehta Scam',
     imageCaption: 'The trading floor of the Bombay Stock Exchange in April 1992 as the Harshad Mehta securities scandal was uncovered.',
+    imageDescription: 'Archival photograph from Dalal Street capturing chaotic open-outcry trading crowds inside the BSE trading hall as fraudulent bank receipt diversions were revealed.',
 
     aeoQuestions: [
       {
@@ -1288,8 +1310,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: '2008 Sensex Crash: FII Outflows & Dalal Street Recovery',
     metaDescription: 'Analyze the 2008 Sensex crash: how foreign capital flight and real estate leverage plunged Indian equities 64%, followed by the 34-month recovery.',
     featuredImage: imgSensex2008,
-    imageAlt: 'Crowd of Indian investors looking up at the digital electronic stock board outside the Bombay Stock Exchange in 2008',
+    imageAlt: 'Indian investors gathered outside Dalal Street watching electronic stock tickers during the 2008 Sensex crash',
+    imageTitle: 'Dalal Street Retail Reaction to FII Capital Outflows (2008)',
     imageCaption: 'Investors outside the Bombay Stock Exchange on Dalal Street in October 2008 watching the Sensex drop below 8,500.',
+    imageDescription: 'Street-level Mumbai photograph documenting market spectators looking up at the outdoor BSE ticker display as global liquidity flight drove the Sensex down 64%.',
 
     aeoQuestions: [
       {
@@ -1401,8 +1425,10 @@ export const crashesData: CrashArticle[] = [
     seoTitle: '2020 Sensex Crash: March Lockdowns & V-Shaped Rebound',
     metaDescription: 'Complete analysis of the March 2020 Sensex crash: nationwide lockdowns, lower circuit breakers, FPI outflows, and the explosive 8-month recovery to 50,000.',
     featuredImage: imgSensex2020,
-    imageAlt: 'Trading room monitors in Mumbai displaying BSE Sensex down 13.88% with trading halt in effect during the March 2020 pandemic crash',
+    imageAlt: 'Mumbai trading desks showing BSE Sensex lower circuit breaker halt during the March 2020 crash',
+    imageTitle: 'BSE Sensex 45-Minute Trading Halt During March 2020 Lockdown Shock',
     imageCaption: 'Trading room monitors displaying the 10% lower circuit breaker trading halt on March 23, 2020, on Dalal Street.',
+    imageDescription: 'Trading terminal photograph recording the 3,934-point single-day decline in the Sensex on March 23, 2020, when pandemic containment measures halted exchange trading.',
 
     aeoQuestions: [
       {
