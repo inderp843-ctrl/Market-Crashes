@@ -17,6 +17,7 @@ export const Navbar: React.FC = () => {
     { label: 'Causes', path: '/causes' },
     { label: 'Recovery', path: '/recovery' },
     { label: 'Lessons', path: '/lessons' },
+    { label: 'SEO Report', path: '/seo-report' },
     { label: 'About', path: '/about' }
   ];
 
@@ -42,6 +43,11 @@ export const Navbar: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-3 text-[11px] text-slate-400">
+            <Link to="/seo-report" className="text-amber-400 font-semibold hover:text-amber-300 transition-colors flex items-center gap-1">
+              <Award className="w-3 h-3 text-amber-400" />
+              <span>SEO Report</span>
+            </Link>
+            <span className="text-slate-600">•</span>
             <Link to="/methodology" className="hover:text-slate-200 transition-colors">Methodology</Link>
             <span className="text-slate-600">•</span>
             <Link to="/sources" className="hover:text-slate-200 transition-colors">Sources</Link>

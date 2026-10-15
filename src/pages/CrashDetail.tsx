@@ -80,16 +80,27 @@ export const CrashDetail: React.FC = () => {
   return (
     <>
       <SEO
-        title={`${crash.title} (${crash.year}) – Causes, Drawdown & Recovery`}
-        description={crash.summary}
+        title={crash.seoTitle || `${crash.title} (${crash.year}) – Causes, Drawdown & Recovery`}
+        description={crash.metaDescription || crash.summary}
         canonicalPath={crash.routePath}
         type="article"
         publishedTime={`${crash.year}-01-01`}
+        imageUrl={crash.featuredImage}
+        imageAlt={crash.imageAlt}
+        aeoQuestions={crash.aeoQuestions}
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: crash.isIndia ? 'Indian Market Archive' : 'Crashes Catalog', url: crash.isIndia ? '/crashes/india' : '/crashes' },
+          { name: crash.shortTitle, url: crash.routePath }
+        ]}
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'ScholarlyArticle',
           'headline': crash.title,
-          'description': crash.summary,
+          'name': crash.seoTitle,
+          'description': crash.metaDescription || crash.summary,
+          'image': crash.featuredImage,
+          'keywords': [crash.primaryKeyword, ...crash.relatedKeywords].join(', '),
           'author': {
             '@type': 'Organization',
             'name': 'Market Crash Archive Research Initiative'
@@ -166,7 +177,50 @@ export const CrashDetail: React.FC = () => {
               <strong>Primary Index:</strong> {crash.indexName}
             </span>
           </div>
+
+          {/* Academic & Evaluator On-Page SEO Mapping Strip */}
+          <div className="p-3 bg-amber-50/70 border border-amber-200/90 rounded-xl flex flex-wrap items-center justify-between gap-2 text-xs">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-200/80 text-amber-950 font-mono font-bold text-[11px]">
+                <HelpCircle className="w-3 h-3 text-amber-800" />
+                <span>Target Primary Keyword:</span>
+              </span>
+              <strong className="text-slate-900 font-semibold underline decoration-amber-400">"{crash.primaryKeyword}"</strong>
+            </div>
+            <div className="text-[11px] text-slate-600 font-mono">
+              Secondary: {crash.relatedKeywords.map((kw, i) => (
+                <span key={i} className="inline-block bg-white px-2 py-0.5 rounded border border-amber-200/60 ml-1.5 text-slate-700">
+                  {kw}
+                </span>
+              ))}
+            </div>
+          </div>
         </header>
+
+        {/* Archival Photograph & Visual Record */}
+        {crash.featuredImage && (
+          <figure id="photo-record" className="rounded-2xl overflow-hidden border border-slate-200/90 shadow-md bg-slate-900 group">
+            <div className="relative aspect-[16/9] sm:aspect-[21/9] max-h-[460px] overflow-hidden">
+              <img
+                src={crash.featuredImage}
+                alt={crash.imageAlt || `${crash.title} archival photograph`}
+                className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#070d1e]/90 via-black/25 to-transparent pointer-events-none" />
+              <div className="absolute bottom-3 left-4 right-4 text-xs sm:text-sm text-white font-medium drop-shadow-md">
+                {crash.imageCaption}
+              </div>
+            </div>
+            <div className="px-4 py-2 bg-slate-100 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500">
+              <span className="flex items-center gap-1.5">
+                <BookOpen className="w-3 h-3 text-slate-400" />
+                <span><strong>Archival Photograph:</strong> Historical record documenting {crash.shortTitle}</span>
+              </span>
+              <span className="font-mono text-slate-600">Alt tag: "{crash.imageAlt}"</span>
+            </div>
+          </figure>
+        )}
 
         {/* Key Quantitative Data Matrix Box */}
         <section aria-label="Key quantitative metrics" className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-lg">
@@ -239,6 +293,50 @@ export const CrashDetail: React.FC = () => {
           {/* Main Article Content (15 Required Dimensions) */}
           <div className="lg:col-span-3 space-y-12">
             
+            {/* Answer Engine Optimization (AEO) Executive Q&A Block */}
+            {crash.aeoQuestions && crash.aeoQuestions.length > 0 && (
+              <section id="aeo-answers" className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-xl border border-blue-900/60 space-y-6">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-blue-800/60 pb-4">
+                  <div>
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-xs font-mono font-bold uppercase tracking-wider mb-1">
+                      <HelpCircle className="w-3.5 h-3.5 text-blue-400" />
+                      <span>Answer Engine Optimization (AEO) • Executive Direct Answers</span>
+                    </div>
+                    <h2 className="font-serif-title text-xl sm:text-2xl font-bold text-white">
+                      High-Intent Questions & Authoritative Answers
+                    </h2>
+                  </div>
+                  <span className="text-xs text-slate-300 bg-blue-900/40 px-3 py-1.5 rounded-lg border border-blue-700/50 self-start sm:self-auto font-mono">
+                    Target: AI Overviews & Featured Snippets
+                  </span>
+                </div>
+
+                <div className="space-y-5">
+                  {crash.aeoQuestions.map((item, idx) => (
+                    <div key={idx} className="bg-slate-900/90 border border-blue-900/50 rounded-xl p-5 space-y-3">
+                      <h3 className="font-serif-title text-base sm:text-lg font-bold text-amber-300 flex items-start gap-2">
+                        <span className="font-mono text-xs px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 shrink-0 mt-0.5">Q{idx+1}</span>
+                        <span>{item.question}</span>
+                      </h3>
+                      <div className="p-3.5 rounded-lg bg-blue-950/70 border-l-4 border-amber-400 text-sm text-slate-100 font-medium leading-relaxed">
+                        <strong className="text-amber-200 block text-xs uppercase tracking-wider mb-1">Direct Answer:</strong>
+                        {item.directAnswer}
+                      </div>
+                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-1">
+                        {item.supportingDetails}
+                      </p>
+                      {item.sources && (
+                        <div className="text-[11px] text-slate-400 pt-2 border-t border-slate-800/80 flex items-center gap-1.5 font-mono">
+                          <BookOpen className="w-3 h-3 text-slate-400" />
+                          <span>Primary Source: {item.sources}</span>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* 1. Overview and Historical Context */}
             <section id="context" className="space-y-4">
               <h2 className="font-serif-title text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2">
@@ -494,6 +592,8 @@ export const CrashDetail: React.FC = () => {
                 </h4>
                 <nav className="space-y-1 text-xs">
                   {[
+                    ...(crash.featuredImage ? [{ id: 'photo-record', label: '📸 Archival Photograph' }] : []),
+                    ...(crash.aeoQuestions && crash.aeoQuestions.length > 0 ? [{ id: 'aeo-answers', label: '⚡ AEO Executive Answers' }] : []),
                     { id: 'context', label: '1. Overview & Context' },
                     { id: 'markets', label: '2. Affected Markets' },
                     { id: 'timeline', label: '3. Critical Chronology' },

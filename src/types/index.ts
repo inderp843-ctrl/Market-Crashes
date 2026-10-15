@@ -32,6 +32,13 @@ export interface ChartDataPoint {
   label?: string;
 }
 
+export interface AeoQnaItem {
+  question: string;
+  directAnswer: string;
+  supportingDetails: string;
+  sources?: string;
+}
+
 export interface CrashArticle {
   id: string;
   slug: string; // e.g. "1929-wall-street-crash"
@@ -46,6 +53,18 @@ export interface CrashArticle {
   isIndia: boolean;
   category: CrashCategory;
   categoryLabel: string;
+  
+  // SEO & Keyword Strategy (College Assignment)
+  primaryKeyword: string;
+  relatedKeywords: [string, string];
+  seoTitle: string;
+  metaDescription: string;
+  featuredImage: string;
+  imageAlt: string;
+  imageCaption: string;
+
+  // AEO - Answer Engine Optimization
+  aeoQuestions: AeoQnaItem[];
   
   // Quantitative Data
   indexName: string;
@@ -77,6 +96,7 @@ export interface CrashArticle {
   whatHistoryTellsUs: string;
   whatHistoryDoesNotTellUs: string;
   methodologyNotes: string;
+  longFormAnalysis?: string[]; // Detailed long-form narrative
   
   // Visualization
   chartData: ChartDataPoint[];
@@ -84,6 +104,7 @@ export interface CrashArticle {
 
   // Metadata & Relations
   readingTimeMinutes: number;
+  wordCountEstimate?: number;
   featured: boolean;
   relatedSlugs: string[];
   sources: SourceCitation[];
@@ -95,4 +116,28 @@ export interface GlossaryItem {
   definition: string;
   historicalExample?: string;
   relatedTerms?: string[];
+}
+
+export interface KeywordResearchRow {
+  pageName: string;
+  url: string;
+  primaryKeyword: string;
+  relatedKeyword1: string;
+  relatedKeyword2: string;
+  searchIntent: 'Informational' | 'Educational / Academic' | 'Navigational' | 'Commercial Investigation';
+  estMonthlySearchVolume: string;
+  keywordDifficulty: string;
+  targetAudience: string;
+  rationale: string;
+  verificationSource: string;
+  verifiedStatus: 'Verified (Industry Benchmark)' | 'Verified (GKP / Ahrefs Global)' | 'Qualitative Assessment (Not verified live)';
+}
+
+export interface AuditChecklistItem {
+  id: number;
+  requirement: string;
+  expectedImplementation: string;
+  actualStatus: 'Verified Complete' | 'Implemented & Tested' | 'Pending Production Verification';
+  pageOrUrlChecked: string;
+  evidenceNotes: string;
 }

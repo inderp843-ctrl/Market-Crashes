@@ -203,6 +203,7 @@ Add a `public/_redirects` file with the following line:
 | `/contact` | `ContactPage` | Inquiries & archival citation corrections |
 | `/privacy-policy` | `PrivacyPolicyPage` | Data transparency and privacy policy |
 | `/disclaimer` | `DisclaimerPage` | Financial & legal research disclaimer |
+| `/seo-report` | `SEOReportPage` | Dedicated College SEO Assignment Report, Keyword Research Tables & AEO Audit |
 
 ---
 

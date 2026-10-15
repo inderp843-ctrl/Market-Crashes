@@ -15,26 +15,60 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ crash, featured = fals
         featured ? 'md:col-span-2 lg:col-span-2' : ''
       }`}
     >
-      <div className="p-6">
-        {/* Top Badges */}
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700">
-              <MapPin className="w-3 h-3 text-slate-400" />
-              {crash.country}
-            </span>
-            <span className="text-xs font-mono text-slate-500 font-medium">
-              {crash.year}
-            </span>
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold font-mono bg-rose-50 text-rose-700 border border-rose-200">
-              <TrendingDown className="w-3 h-3 text-rose-600" />
+      {/* Article Image Banner */}
+      {crash.featuredImage && (
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
+          <Link to={crash.routePath} tabIndex={-1} aria-hidden="true" className="block w-full h-full">
+            <img
+              src={crash.featuredImage}
+              alt={crash.imageAlt || `${crash.title} historical record photograph`}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95"
+              loading="lazy"
+            />
+          </Link>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none" />
+          
+          <div className="absolute top-3 right-3">
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold font-mono bg-rose-600/95 text-white shadow-md backdrop-blur-xs">
+              <TrendingDown className="w-3.5 h-3.5" />
               {crash.declinePercentage}%
             </span>
           </div>
+
+          <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white text-xs">
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-black/60 backdrop-blur-md font-mono text-[11px]">
+              <MapPin className="w-3 h-3 text-rose-400" />
+              {crash.country} • {crash.year}
+            </span>
+            <span className="text-[11px] font-mono text-slate-300 bg-black/50 px-2 py-0.5 rounded backdrop-blur-md">
+              {crash.indexName.split(' ')[0]}
+            </span>
+          </div>
         </div>
+      )}
+
+      <div className="p-6">
+        {/* Top Badges (Fallback if no image or secondary tag) */}
+        {!crash.featuredImage && (
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700">
+                <MapPin className="w-3 h-3 text-slate-400" />
+                {crash.country}
+              </span>
+              <span className="text-xs font-mono text-slate-500 font-medium">
+                {crash.year}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold font-mono bg-rose-50 text-rose-700 border border-rose-200">
+                <TrendingDown className="w-3 h-3 text-rose-600" />
+                {crash.declinePercentage}%
+              </span>
+            </div>
+          </div>
+        )}
 
         {/* Title & Subtitle */}
         <h3 className="font-serif-title font-bold text-slate-900 group-hover:text-blue-900 transition-colors text-lg sm:text-xl leading-snug mb-2">

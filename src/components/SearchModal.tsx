@@ -100,7 +100,27 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
         badge: 'Historical Bubble'
       }));
 
-    return [...crashMatches, ...causeMatches, ...glossaryMatches, ...bubbleMatches].slice(0, 8);
+    // 5. Analytical Tools & Platform Pages
+    const staticPages = [
+      { title: 'Academic SEO & Keyword Research Report', subtitle: 'Keyword research tables, on-page matrix, and AEO strategy for college assignment', path: '/seo-report', badge: 'Assignment Report', keywords: ['seo', 'keyword', 'report', 'assignment', 'research', 'table', 'presentation', 'audit'] },
+      { title: 'Interactive Multi-Crash Comparator', subtitle: 'Contrast drawdowns, duration, and central bank liquidity side-by-side', path: '/compare', badge: 'Analytical Tool', keywords: ['compare', 'comparator', 'contrast', 'metrics'] },
+      { title: 'Historical Market Crash Timeline', subtitle: 'Chronological roadmap of crashes from 1929 to present day', path: '/timeline', badge: 'Chronology', keywords: ['timeline', 'chronology', 'dates', 'history'] },
+      { title: 'Empirical Market Recovery Studies', subtitle: 'Analysis of V-shaped vs L-shaped recoveries and breakeven horizons', path: '/recovery', badge: 'Recovery Research', keywords: ['recovery', 'rebound', 'breakeven', 'v-shape', 'duration'] },
+      { title: '6 Fundamental Causes of Market Panics', subtitle: 'Deep dive into leverage, liquidity runs, monetary shocks, and bubbles', path: '/causes', badge: 'Research Study', keywords: ['causes', 'why', 'triggers', 'factors', 'leverage'] },
+      { title: 'Timeless Lessons for Modern Investors', subtitle: 'Synthesized asset allocation rules across a century of crashes', path: '/lessons', badge: 'Investor Guide', keywords: ['lessons', 'investing', 'rules', 'principles', 'advice'] }
+    ];
+
+    const pageMatches = staticPages
+      .filter(p => p.title.toLowerCase().includes(q) || p.subtitle.toLowerCase().includes(q) || p.keywords.some(k => k.includes(q)))
+      .map(p => ({
+        type: 'page',
+        title: p.title,
+        subtitle: p.subtitle,
+        path: p.path,
+        badge: p.badge
+      }));
+
+    return [...pageMatches, ...crashMatches, ...causeMatches, ...glossaryMatches, ...bubbleMatches].slice(0, 8);
   }, [query]);
 
   if (!isOpen) return null;

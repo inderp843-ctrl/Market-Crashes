@@ -437,6 +437,34 @@ export const Home: React.FC = () => {
           </div>
         </section>
 
+        {/* Academic SEO Assignment Report Showcase Banner */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-blue-950 via-slate-900 to-indigo-950 text-white rounded-2xl p-6 sm:p-10 border border-blue-900/60 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="space-y-3 max-w-2xl">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-mono font-bold uppercase tracking-wider">
+                <Award className="w-3.5 h-3.5 text-amber-400" />
+                <span>College Course Assignment • Technical SEO & AEO</span>
+              </div>
+              <h2 className="font-serif-title text-2xl sm:text-3xl font-bold text-white">
+                Official Keyword Research & Search Strategy Report
+              </h2>
+              <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Inspect the dedicated keyword research tables for the Homepage, 1929 Wall Street Crash, 2008 Financial Crisis, and 2020 COVID-19 crash, accompanied by on-page SEO verification, Answer Engine Optimization (AEO) benchmarks, and Vercel deployment guides.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+              <Link
+                to="/seo-report"
+                className="px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+              >
+                <span>Inspect SEO Report</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* 7. Institutional Newsletter */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <NewsletterSection />

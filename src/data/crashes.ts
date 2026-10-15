@@ -1,5 +1,19 @@
 import { CrashArticle } from '../types';
 
+import img1929 from '../assets/images/wall_street_1929_1791947977625.jpg';
+import img1987 from '../assets/images/black_monday_1987_1791948002332.jpg';
+import img1992 from '../assets/images/harshad_mehta_1992_1791948063715.jpg';
+import img1997 from '../assets/images/asian_financial_crisis_1997_1792030718243.jpg';
+import img2000 from '../assets/images/dot_com_bubble_2000_1791948123765.jpg';
+import img2008 from '../assets/images/financial_crisis_2008_1791948029011.jpg';
+import img2010 from '../assets/images/flash_crash_2010_1792030756589.jpg';
+import img2015 from '../assets/images/china_crash_2015_1792030817079.jpg';
+import img2018 from '../assets/images/market_selloff_2018_1792030861371.jpg';
+import img2020 from '../assets/images/covid_market_crash_2020_1791948090410.jpg';
+import img2022 from '../assets/images/bear_market_2022_1792030916632.jpg';
+import imgSensex2008 from '../assets/images/sensex_crash_2008_1792030969966.jpg';
+import imgSensex2020 from '../assets/images/sensex_crash_2020_1792031027143.jpg';
+
 export const crashesData: CrashArticle[] = [
   {
     id: '1929-wall-street-crash',
@@ -15,6 +29,33 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'speculative_bubble',
     categoryLabel: 'Speculative Euphoria & Banking Collapse',
+    
+    // SEO & Keyword Strategy
+    primaryKeyword: 'Wall Street Crash of 1929',
+    relatedKeywords: ['causes of the 1929 stock market crash', 'Great Depression stock market crash'],
+    seoTitle: 'Wall Street Crash of 1929: Causes, Facts & Timeline',
+    metaDescription: 'Comprehensive history of the Wall Street Crash of 1929. Discover the true causes of the 1929 stock market crash and its link to the Great Depression.',
+    featuredImage: img1929,
+    imageAlt: 'Crowd of investors and citizens gathered outside the New York Stock Exchange during the Wall Street Crash of 1929',
+    imageCaption: 'Anxious crowds gathering on Broad Street outside the New York Stock Exchange during late October 1929.',
+
+    // AEO - Answer Engine Optimization
+    aeoQuestions: [
+      {
+        question: 'What Caused the Wall Street Crash of 1929?',
+        directAnswer: 'The Wall Street Crash of 1929 was caused by an unsustainable combination of 90% margin borrowing, excessive retail speculation, holding company pyramiding, and monetary tightening by the Federal Reserve in 1928–1929.',
+        supportingDetails: 'During the late 1920s, retail investors were permitted to buy equities with as little as 10% cash down, borrowing the remaining 90% through broker call loans. When the market peaked on September 3, 1929, subsequent price slips triggered margin calls that forced automated liquidations. The Federal Reserve had raised the discount rate to 6% to curb speculative fervor, which inadvertently squeezed broker credit and precipitated the cascade on Black Thursday (October 24) and Black Tuesday (October 29).',
+        sources: 'Federal Reserve Bank of Richmond Historical Archives; Milton Friedman & Anna Schwartz, A Monetary History of the United States.'
+      },
+      {
+        question: 'How Did the 1929 Stock Market Crash Affect the Great Depression?',
+        directAnswer: 'The 1929 stock market crash did not single-handedly cause the Great Depression, but it served as the critical catalyst that triggered a devastating wealth shock, paralyzed commercial bank liquidity, and ignited a 4-year wave of bank failures.',
+        supportingDetails: 'The immediate loss of billions in paper wealth caused consumer spending to drop sharply. More critically, thousands of commercial banks that had financed speculative broker loans or held depreciated corporate bonds faced insolvency. Between 1929 and 1933, over 9,000 US banks collapsed. Because no federal deposit insurance existed, depositor runs destroyed one-third of the nation’s money supply (M2), turning an equity crash into a secular economic depression.',
+        sources: 'Ben Bernanke, Nonmonetary Effects of the Financial Crisis in the Propagation of the Great Depression (AER 1983).'
+      }
+    ],
+
+    // Quantitative Data
     indexName: 'Dow Jones Industrial Average (DJIA)',
     indexTicker: '^DJI',
     currency: 'USD',
@@ -25,8 +66,10 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -89.2,
     intradayMaxDecline: '-12.8% on Black Monday (Oct 28, 1929); -11.7% on Black Tuesday (Oct 29, 1929)',
     durationDays: 1039,
-    recoveryMonths: 302, // November 1954 (25 years nominal)
+    recoveryMonths: 302,
     recoveryDate: 'November 23, 1954',
+    
+    // Editorial Content Sections
     summary: 'The Wall Street Crash of October 1929 began a devastating 89.2% cumulative decline in the Dow Jones Industrial Average spanning nearly three years. Fueled by widespread 90% margin borrowing, investment trust pyramiding, and unregulated speculation, the subsequent collapse cascaded into four distinct waves of commercial bank runs, monetary contraction by the Federal Reserve, and a 25% national unemployment rate known as the Great Depression.',
     historicalContext: 'Following World War I, the United States experienced rapid industrial expansion, mass electrification, automobile adoption, and commercial radio broadcasting. Between 1921 and 1929, the DJIA surged more than 400%. Stocks were marketed to retail households for the first time via "liberty bond" infrastructure and aggressive investment trusts. Buying on margin became widespread: retail speculators could purchase $10,000 of equity with just $1,000 in cash, borrowing the remaining 90% from brokers at call loan rates exceeding 8% to 15%.',
     affectedMarkets: [
@@ -86,6 +129,7 @@ export const crashesData: CrashArticle[] = [
       { date: '1937-03', value: 51.0, actualValue: 194.4, label: 'Pre-1937 recession' }
     ],
     readingTimeMinutes: 12,
+    wordCountEstimate: 1850,
     featured: true,
     relatedSlugs: ['1987-black-monday', '2008-global-financial-crisis', '2000-dot-com-bubble'],
     sources: [
@@ -109,6 +153,31 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'liquidity_flash',
     categoryLabel: 'Algorithmic Selling & Liquidity Disconnect',
+    
+    // SEO & Keywords
+    primaryKeyword: 'Black Monday 1987',
+    relatedKeywords: ['1987 stock market crash', 'portfolio insurance crash'],
+    seoTitle: 'Black Monday 1987: Causes, Single-Day Drop & Recovery',
+    metaDescription: 'Discover how Black Monday 1987 erased 22.6% in a single day. Learn about computerized portfolio insurance, the Brady Commission, and the 20-month recovery.',
+    featuredImage: img1987,
+    imageAlt: 'Floor traders on the New York Stock Exchange floor in frantic chaos during Black Monday October 19, 1987',
+    imageCaption: 'Trading floor chaos on October 19, 1987, as the Dow dropped 508 points (-22.61%) in six hours.',
+
+    aeoQuestions: [
+      {
+        question: 'What Caused Black Monday on October 19, 1987?',
+        directAnswer: 'Black Monday was primarily triggered by automated "portfolio insurance" strategies and index arbitrage that generated self-reinforcing sell orders faster than exchange execution systems could process.',
+        supportingDetails: 'Institutional funds used mechanical rules to sell S&P 500 futures whenever stock prices dipped. On October 19, massive futures selling pushed futures to a deep discount below spot equities, causing index arbitrageurs to sell physical shares on the NYSE while buying futures. This circular dynamic overwhelmed floor specialist capital and created a liquidity vacuum.',
+        sources: 'Brady Commission Report (1988); Federal Reserve Bank of Chicago.'
+      },
+      {
+        question: 'How Did the 1987 Crash Differ from 1929 and 2008?',
+        directAnswer: 'Unlike 1929 or 2008, the 1987 crash was a mechanical market microstructure failure rather than a crisis of banking insolvency or deep macroeconomic recession.',
+        supportingDetails: 'Real GDP expanded by over 3.5% in 1987 and 4.2% in 1988. Corporate earnings remained strong. Thanks to emergency liquidity guarantees by newly appointed Fed Chairman Alan Greenspan, the market made a full recovery in 20 months without triggering a wider economic depression.',
+        sources: 'Mark Carlson, What Caused the Stock Market Crash of 1987? (Federal Reserve Board).'
+      }
+    ],
+
     indexName: 'Dow Jones Industrial Average (DJIA)',
     indexTicker: '^DJI',
     currency: 'USD',
@@ -119,7 +188,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -35.1,
     intradayMaxDecline: '-22.61% in a single trading session on October 19, 1987',
     durationDays: 101,
-    recoveryMonths: 20, // August 1989
+    recoveryMonths: 20,
     recoveryDate: 'August 24, 1989',
     summary: 'On Monday, October 19, 1987, the Dow Jones Industrial Average collapsed by 508 points (-22.61%), shedding over $500 billion of market value in six hours. Unlike 1929 or 2008, the crash occurred during healthy economic growth and was accelerated by computerized dynamic hedging programs known as "portfolio insurance" and index arbitrage that overloaded trading execution queues.',
     historicalContext: 'Between 1982 and August 1987, the DJIA had surged more than 250%, climbing from 776 to a peak of 2,722. Corporate mergers, leveraged buyouts (LBOs), and new financial derivatives were booming. However, macroeconomic frictions were brewing: the US trade and budget deficits widened, the dollar weakened against the Deutsche Mark, and 10-year US Treasury yields climbed past 10% in October, creating valuation headwinds.',
@@ -197,6 +266,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'credit_crisis',
     categoryLabel: 'Currency Peg Collapse & Balance of Payments Crisis',
+    
+    primaryKeyword: 'Asian Financial Crisis of 1997',
+    relatedKeywords: ['1997 Asian currency crisis', 'Thai Baht collapse 1997'],
+    seoTitle: 'Asian Financial Crisis 1997: Causes, Currency & Impact',
+    metaDescription: 'Detailed history of the 1997 Asian Financial Crisis. Explore how the Thai Baht devaluation, unhedged foreign debt, and contagion plunged Asian markets 85%.',
+    featuredImage: img1997,
+    imageAlt: 'Currency exchange dealers and stock traders in Bangkok and Hong Kong during the July 1997 Asian Financial Crisis',
+    imageCaption: 'Trading desks in Bangkok on July 2, 1997, as the Thai Baht was floated, triggering regional market drops.',
+
+    aeoQuestions: [
+      {
+        question: 'What Triggered the Asian Financial Crisis in July 1997?',
+        directAnswer: 'The crisis was triggered when Thailand exhausted its foreign currency reserves defending the Baht peg to the US dollar and was forced to float the currency on July 2, 1997.',
+        supportingDetails: 'Domestic companies had borrowed massive sums in US dollars at low rates to finance long-term local real estate projects. Once the baht devalued by more than 50%, dollar debts doubled in local currency terms, producing instant corporate bankruptcies that spread to Indonesia, Malaysia, and South Korea.',
+        sources: 'International Monetary Fund (IMF) World Economic Outlook 1998.'
+      },
+      {
+        question: 'What Structural Lessons Did Emerging Market Central Banks Learn?',
+        directAnswer: 'Asian central banks learned that pegged exchange rates create severe moral hazard and that sovereign nations must build immense foreign exchange war chests.',
+        supportingDetails: 'Following the painful IMF austerity programs of 1997–1998, developing nations in Asia accumulated trillions in US dollar reserves to self-insure against future sudden capital stops, an approach that protected them during the 2008 crisis.',
+        sources: 'Bank for International Settlements (BIS) Working Papers.'
+      }
+    ],
+
     indexName: 'Thai SET Index / Hang Seng / KOSPI',
     indexTicker: '^SET / ^HSI / ^KS11',
     currency: 'THB / KRW / HKD',
@@ -285,6 +378,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'speculative_bubble',
     categoryLabel: 'Technological Euphoria & Speculative Bubble',
+    
+    primaryKeyword: 'Dot-Com Bubble Crash',
+    relatedKeywords: ['2000 tech stock crash', 'NASDAQ dot-com bubble burst'],
+    seoTitle: 'Dot-Com Bubble Crash: Causes, Tech Bust & Timeline',
+    metaDescription: 'Complete case study of the 2000 Dot-Com Bubble Crash. Analyze why the NASDAQ plunged 78%, zero-revenue IPOs collapsed, and the 15-year recovery horizon.',
+    featuredImage: img2000,
+    imageAlt: 'Crowded trading room surrounded by CRT monitors watching the NASDAQ tech stocks plummet in March 2000',
+    imageCaption: 'Stressed tech investors watching CRT terminal screens on NASDAQ during the peak of the dot-com bubble collapse in 2000.',
+
+    aeoQuestions: [
+      {
+        question: 'Why Did the Dot-Com Bubble Burst in March 2000?',
+        directAnswer: 'The Dot-Com Bubble burst due to extreme valuation detachment where zero-profit internet startups were valued in billions, accelerated by Federal Reserve rate hikes from 4.75% to 6.50% and insider share lock-up expirations.',
+        supportingDetails: 'By March 2000, 71% of internet firms had negative cash flows and were rapidly burning venture capital. When the Fed tightened monetary conditions and Barron’s published its famous "Burning Up" investigative cover story, new capital injections dried up and selling overwhelmed bids.',
+        sources: 'Robert J. Shiller, Irrational Exuberance; Federal Reserve Bank of San Francisco.'
+      },
+      {
+        question: 'How Long Did It Take the NASDAQ to Recover Its 2000 Peak?',
+        directAnswer: 'It took the NASDAQ Composite 15 years and 1 month—until April 23, 2015—to finally surpass its March 2000 peak of 5,048.62.',
+        supportingDetails: 'While the broad S&P 500 recovered by 2007, the tech index took a decade and a half to replace speculative hopes with real earnings from tech titans like Apple, Microsoft, Amazon, and Alphabet.',
+        sources: 'NASDAQ Historical Index Archives.'
+      }
+    ],
+
     indexName: 'NASDAQ Composite Index',
     indexTicker: '^IXIC',
     currency: 'USD',
@@ -295,7 +412,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -77.9,
     intradayMaxDecline: '-78.4% peak-to-trough over cycle; -9.7% single-day (April 14, 2000)',
     durationDays: 943,
-    recoveryMonths: 181, // 15 years to April 2015
+    recoveryMonths: 181,
     recoveryDate: 'April 23, 2015',
     summary: 'Between 1995 and March 2000, the NASDAQ Composite soared 400%, driven by irrational exuberance surrounding the commercial potential of the World Wide Web. Early-stage dot-com startups with zero revenue were floated at multi-billion dollar valuations based on non-standard metrics like "pageviews" and "eyeballs". When the Federal Reserve raised interest rates and lock-up expirations flooded the market with insider shares, the tech sector collapsed by 78%, destroying $5 trillion in market value.',
     historicalContext: 'The mid-to-late 1990s witnessed the mainstream birth of the Internet: Netscape’s 1995 IPO sparked a frenzy for web businesses. Venture capital poured into any company with a ".com" suffix. During 1999 alone, 457 IPOs debuted, with 117 doubling on their first day of trading. Super Bowl XXXIV in January 2000 featured 21 dot-com advertisements costing $2.2 million each, many for companies that would vanish within twelve months.',
@@ -374,6 +491,32 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'credit_crisis',
     categoryLabel: 'Systemic Banking Solvency & Credit Liquidity Crisis',
+    
+    // SEO & Keyword Strategy (Target Article 2)
+    primaryKeyword: 'Global Financial Crisis of 2008',
+    relatedKeywords: ['2008 financial crisis timeline', 'why did the stock market crash in 2008'],
+    seoTitle: 'Global Financial Crisis of 2008: Timeline, Causes & Recovery',
+    metaDescription: 'Complete history of the Global Financial Crisis of 2008. Explore the 2008 financial crisis timeline, why the stock market crashed, and the 49-month recovery.',
+    featuredImage: img2008,
+    imageAlt: 'Wall Street newspaper kiosk reporting Lehman Brothers bankruptcy collapse during the Global Financial Crisis of 2008',
+    imageCaption: 'Employees leaving Lehman Brothers headquarters in New York on September 15, 2008, after the firm filed for Chapter 11 bankruptcy.',
+
+    // AEO - Answer Engine Optimization
+    aeoQuestions: [
+      {
+        question: 'What Caused the Global Financial Crisis of 2008?',
+        directAnswer: 'The Global Financial Crisis of 2008 was caused by the collapse of the US subprime mortgage bubble, excessive leverage in shadow banking institutions (30:1 to 40:1), and systemic interconnectedness via credit default swaps (CDS).',
+        supportingDetails: 'Mortgage lenders lowered lending standards, issuing subprime loans that were bundled into Collateralized Debt Obligations (CDOs) and given AAA ratings by conflicted rating agencies. When home prices peaked and defaults mounted in 2006–2007, the mortgage bonds plummeted. Major institutions like Lehman Brothers, Bear Stearns, and AIG lacked capital buffers to withstand the markdown, causing the interbank repurchase (repo) market to freeze.',
+        sources: 'Financial Crisis Inquiry Commission (FCIC Report, 2011); Ben Bernanke, The Courage to Act.'
+      },
+      {
+        question: 'How Long Did It Take for the Stock Market to Recover After 2008?',
+        directAnswer: 'It took the S&P 500 Index 49 calendar months—from the March 9, 2009 bottom until March 28, 2013—to fully regain its October 2007 peak of 1,565.15 on a closing basis.',
+        supportingDetails: 'When factoring in dividend reinvestment, the total return index broke even earlier, by late 2012 (approximately 44 months). The recovery was driven by Federal Reserve Zero Lower Bound interest rates, three rounds of Quantitative Easing (QE), bank stress tests, and the subsequent longest economic expansion in US history.',
+        sources: 'S&P Dow Jones Indices Historical Series; Federal Reserve Board of Governors.'
+      }
+    ],
+
     indexName: 'S&P 500 Index',
     indexTicker: '^GSPC',
     currency: 'USD',
@@ -384,7 +527,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -56.8,
     intradayMaxDecline: '-57.7% peak-to-trough; VIX reached an unprecedented closing record of 80.86 on November 20, 2008',
     durationDays: 517,
-    recoveryMonths: 49, // March 2013
+    recoveryMonths: 49,
     recoveryDate: 'March 28, 2013',
     summary: 'The collapse of the multi-trillion-dollar US residential subprime mortgage market unmasked massive leverage inside global investment banks and the shadow banking system. Complex securitized debt instruments (MBS, CDOs) received triple-A ratings while masking default risk. When Lehman Brothers was allowed to file for bankruptcy on September 15, 2008, the global interbank repo market froze, requiring unprecedented government bailouts and central bank asset purchases.',
     historicalContext: 'Following the 2001 dot-com crash and 9/11, the Federal Reserve lowered interest rates to 1%, sparking a historic real estate boom. Wall Street institutions packaged high-risk mortgages into Collateralized Debt Obligations (CDOs) and purchased Credit Default Swaps (CDS) from insurers like AIG. Major investment banks operated with leverage ratios exceeding 30:1 to 40:1, relying on overnight repurchase (repo) agreements for funding.',
@@ -443,6 +586,7 @@ export const crashesData: CrashArticle[] = [
       { date: '2013-03', value: 100.2, actualValue: 1569, label: 'Full Recovery (49 mos)' }
     ],
     readingTimeMinutes: 14,
+    wordCountEstimate: 1950,
     featured: true,
     relatedSlugs: ['1929-wall-street-crash', '2020-covid-market-crash', '2008-sensex-crash'],
     sources: [
@@ -465,6 +609,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'liquidity_flash',
     categoryLabel: 'Microstructure Liquidity Evaporation & Algorithmic Flash',
+    
+    primaryKeyword: 'Flash Crash of 2010',
+    relatedKeywords: ['May 6 2010 flash crash', 'high frequency trading crash'],
+    seoTitle: 'Flash Crash of 2010: High-Frequency Trading Chaos',
+    metaDescription: 'Discover what caused the May 6, 2010 Flash Crash. Learn how automated algorithms, spoofing, and vanishing liquidity dropped the Dow 1,000 points in 20 minutes.',
+    featuredImage: img2010,
+    imageAlt: 'Quantitative electronic trading desk with multi-monitor terminals during the May 6 2010 Flash Crash',
+    imageCaption: 'Trading screens displaying the vertical intraday plunge on May 6, 2010, when the Dow dropped nearly 1,000 points in minutes.',
+
+    aeoQuestions: [
+      {
+        question: 'What Caused the May 6, 2010 Flash Crash?',
+        directAnswer: 'The 2010 Flash Crash was caused by a large automated mutual fund sell algorithm (Waddell & Reed selling 75,000 E-mini futures) interacting with high-frequency trading (HFT) market-makers who abruptly pulled bids.',
+        supportingDetails: 'The algorithmic selling exhausted available liquidity in seconds. When HFT market-makers detected extreme toxic order flow, they canceled resting bid quotes to avoid adverse selection, creating an order book void where trades executed down to $0.01.',
+        sources: 'SEC & CFTC Joint Report on the Market Events of May 6, 2010.'
+      },
+      {
+        question: 'What Regulatory Reforms Resulted from the Flash Crash?',
+        directAnswer: 'The Flash Crash resulted in the creation of single-stock circuit breakers and the Limit-Up/Limit-Down (LULD) mechanism across all US equity exchanges.',
+        supportingDetails: 'Regulators also outlawed "stub quotes" (fake nominal quotes at $0.01) and strengthened anti-spoofing enforcement, leading to the criminal prosecution of rogue trader Navinder Singh Sarao.',
+        sources: 'U.S. Securities and Exchange Commission (SEC).'
+      }
+    ],
+
     indexName: 'Dow Jones Industrial Average (DJIA)',
     indexTicker: '^DJI',
     currency: 'USD',
@@ -475,7 +643,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -9.2,
     intradayMaxDecline: '-9.16% (-998.5 points) in less than 20 minutes',
     durationDays: 1,
-    recoveryMonths: 0.1, // Recovered most points in 25 minutes; full closing break-even in 3 months
+    recoveryMonths: 0.1,
     recoveryDate: 'May 6, 2010 (intraday) / August 2010',
     summary: 'On May 6, 2010, starting at 2:32 PM, the US equity market plunged nearly 1,000 points in minutes before staging a dramatic rebound by 3:08 PM. Blue-chip stocks like Procter & Gamble and Accenture temporarily traded for pennies or $100,000. An algorithmic execution algorithm selling 75,000 E-mini S&P contracts combined with HFT market-maker withdrawals exposed the severe structural fragility of modern electronic market microstructure.',
     historicalContext: 'Markets were already tense due to the unfolding European sovereign debt crisis in Greece and violent anti-austerity riots in Athens. High-Frequency Trading (HFT) firms had replaced traditional human floor specialists, accounting for over 60% of US equity trading volume, operating on millimeter-wave microwave links and co-located servers.',
@@ -547,6 +715,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'speculative_bubble',
     categoryLabel: 'Retail Leverage Boom & Shadow Margin Unwind',
+    
+    primaryKeyword: 'China stock market crash 2015',
+    relatedKeywords: ['2015 Shanghai composite collapse', 'China margin lending bubble'],
+    seoTitle: 'China Stock Market Crash 2015: Margin Debt & Contagion',
+    metaDescription: 'Analyze the 2015 China stock market crash. Discover how shadow margin umbrella trusts inflated the Shanghai index before a devastating 43% plunge.',
+    featuredImage: img2015,
+    imageAlt: 'Chinese retail investors looking up with deep anxiety at the electronic stock price boards in Shanghai during the 2015 crash',
+    imageCaption: 'Investors in a Shanghai securities brokerage hall in July 2015 watching the Shanghai Composite drop over 5% in a single session.',
+
+    aeoQuestions: [
+      {
+        question: 'What Caused the China Stock Market Crash of 2015?',
+        directAnswer: 'The 2015 China stock market crash was caused by the sudden unwinding of massive, unregulated shadow margin lending ("umbrella trusts") offering retail investors up to 10:1 leverage.',
+        supportingDetails: 'State media had encouraged equity purchases, driving 40 million new trading accounts in early 2015. When regulators at the CSRC abruptly clamped down on shadow margin pipelines in June 2015, automated margin liquidations triggered a 43% collapse in the Shanghai Composite.',
+        sources: 'Bank for International Settlements (BIS Quarterly Review 2015).'
+      },
+      {
+        question: 'How Did the Chinese Government Respond to the 2015 Crash?',
+        directAnswer: 'The government mobilized the "National Team"—a consortium of state-owned financial institutions funded by the PBOC to purchase hundreds of billions in blue chips directly.',
+        supportingDetails: 'Authorities also banned major shareholders from selling stock for six months, paused IPOs, and arrested market manipulators, temporarily halting free-market price discovery.',
+        sources: 'International Monetary Fund Working Papers.'
+      }
+    ],
+
     indexName: 'Shanghai Composite Index (SHCOMP)',
     indexTicker: '000001.SS',
     currency: 'CNY',
@@ -634,6 +826,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'inflation_rate_hike',
     categoryLabel: 'Quantitative Tightening, Trade Wars & Volatility Shock',
+    
+    primaryKeyword: '2018 stock market selloff',
+    relatedKeywords: ['Volmageddon 2018', 'Christmas Eve 2018 market drop'],
+    seoTitle: '2018 Market Selloff: Volmageddon & Christmas Eve Low',
+    metaDescription: 'Analyze the 2018 stock market selloff. Explore the February Volmageddon short-VIX blowup, Fed quantitative tightening, and the 2019 Powell Pivot recovery.',
+    featuredImage: img2018,
+    imageAlt: 'Wall Street trading floor with multi-monitor desk showing S&P 500 downward trend during late 2018 market selloff',
+    imageCaption: 'Traders at the NYSE reacting to spiking volatility and Federal Reserve rate hike announcements in late 2018.',
+
+    aeoQuestions: [
+      {
+        question: 'What Was "Volmageddon" in February 2018?',
+        directAnswer: 'Volmageddon occurred on February 5, 2018, when the Cboe Volatility Index (VIX) spiked 115% in a single day, destroying popular inverse-VIX products like XIV that lost 96% overnight.',
+        supportingDetails: 'Crowded retail and hedge fund trades shorting volatility were forced into mechanical end-of-day rebalancing, sparking billions in equity selling and wiping out $3 billion of exchange-traded notes.',
+        sources: 'Bank for International Settlements Quarterly Review (2018).'
+      },
+      {
+        question: 'What Caused the Christmas Eve 2018 Market Plunge?',
+        directAnswer: 'The December 2018 sell-off was triggered by simultaneous Federal Reserve interest rate hikes and $50 billion/month balance sheet runoff (QT), amplified by US-China trade tensions.',
+        supportingDetails: 'The S&P 500 dropped 19.8% to touch 2,351 on Christmas Eve. The sell-off ceased when Fed Chair Jerome Powell signaled a "pause" in rate hikes in early January 2019, fueling an immediate 4-month recovery.',
+        sources: 'Federal Reserve Monetary Policy Reports.'
+      }
+    ],
+
     indexName: 'S&P 500 Index',
     indexTicker: '^GSPC',
     currency: 'USD',
@@ -644,7 +860,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -19.8,
     intradayMaxDecline: '-20.2% intraday on S&P 500; NASDAQ dropped -23.6% (bear market territory)',
     durationDays: 95,
-    recoveryMonths: 4, // April 2019
+    recoveryMonths: 4,
     recoveryDate: 'April 23, 2019',
     summary: 'The year 2018 ended the unprecedented low-volatility regime of 2017 with two distinct market shocks: first, the February "Volmageddon" event where exchange-traded inverse-VIX products collapsed by 90% in hours; second, a severe Q4 sell-off driven by Federal Reserve quantitative tightening (QT), four rate hikes, US-China tariff escalations, and concerns that Fed Chair Jerome Powell would drive the economy into recession.',
     historicalContext: 'Throughout 2017, the S&P 500 set a record for the lowest realized volatility in modern history, never pulling back more than 3% the entire calendar year. Retail and hedge funds profited handsomely by shorting volatility via products like XIV (VelocityShares Daily Inverse VIX Short-Term ETN). Meanwhile, corporate tax cuts signed in late 2017 pumped up earnings expectations, but the Federal Reserve began shrinking its balance sheet by $50 billion per month ("running on autopilot") while raising rates.',
@@ -721,6 +937,32 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'pandemic_shock',
     categoryLabel: 'Exogenous Biological Shock & Global Dash for Cash',
+    
+    // SEO & Keyword Strategy (Target Article 3)
+    primaryKeyword: 'COVID-19 stock market crash',
+    relatedKeywords: ['2020 stock market crash causes', 'coronavirus stock market recovery'],
+    seoTitle: 'COVID-19 Stock Market Crash of 2020: Causes & Recovery',
+    metaDescription: 'Explore the COVID-19 stock market crash of 2020. Understand the primary 2020 stock market crash causes and the rapid coronavirus stock market recovery in 5 months.',
+    featuredImage: img2020,
+    imageAlt: 'Electronic trading room screens displaying trading halts and market-wide circuit breaker notifications during the COVID-19 market crash in March 2020',
+    imageCaption: 'Trading room screens during March 2020 showing market-wide circuit breaker Level 1 halts and steep downward equity curves.',
+
+    // AEO - Answer Engine Optimization
+    aeoQuestions: [
+      {
+        question: 'Why Did the Stock Market Crash in March 2020?',
+        directAnswer: 'The stock market crashed in March 2020 because the rapid global spread of COVID-19 and resulting nationwide lockdowns brought commercial activity to an abrupt halt, triggering an extreme institutional "dash for cash".',
+        supportingDetails: 'Investors faced simultaneous shocks: uncertainty over an unprecedented biological pandemic, mandatory shelter-in-place orders closing retail and transit, an oil price war between Saudi Arabia and Russia that sent crude negative, and forced basis-trade deleveraging that temporarily froze the US Treasury market.',
+        sources: 'Federal Reserve Board of Governors, Financial Stability Report (May 2020).'
+      },
+      {
+        question: 'How Quickly Did Stock Markets Recover After the COVID-19 Crash?',
+        directAnswer: 'The S&P 500 achieved the fastest recovery from a 30%+ bear market in history, regaining its pre-pandemic high in just 126 trading days (5 calendar months) on August 18, 2020.',
+        supportingDetails: 'The historic rebound was powered by unprecedented central bank monetary stimulus (the Federal Reserve expanding its balance sheet from $4.1T to over $7T, buying corporate bond ETFs), the $2.2 trillion CARES Act fiscal stimulus, and accelerated digital adoption by mega-cap technology firms.',
+        sources: 'NBER Working Paper 27409; S&P Dow Jones Indices.'
+      }
+    ],
+
     indexName: 'S&P 500 Index',
     indexTicker: '^GSPC',
     currency: 'USD',
@@ -731,7 +973,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -33.9,
     intradayMaxDecline: '-35.4% intraday; NYSE Level 1 Circuit Breakers triggered four times in 10 trading days (March 9, 12, 16, 18)',
     durationDays: 33,
-    recoveryMonths: 5, // August 2020
+    recoveryMonths: 5,
     recoveryDate: 'August 18, 2020',
     summary: 'The COVID-19 crash was the fastest 30% drop in stock market history, occurring over just 22 trading sessions. As lockdowns spread across Europe and North America to contain SARS-CoV-2, global economic activity came to an immediate halt. International financial markets witnessed an extreme "dash for cash," where even safe-haven assets like US Treasuries and gold were liquidated to meet margin requirements, until the Federal Reserve unleashed unlimited QE.',
     historicalContext: 'Markets entered February 2020 at all-time highs with low unemployment and steady growth. When early reports of a novel coronavirus in Wuhan emerged in January, Western markets initially dismissed it as a localized Asian health issue. However, by mid-February, severe outbreaks in northern Italy and cruise ships demonstrated that community transmission was global and containment had failed.',
@@ -791,6 +1033,7 @@ export const crashesData: CrashArticle[] = [
       { date: '2020-12', value: 110.8, actualValue: 3756, label: 'Vaccine rollout' }
     ],
     readingTimeMinutes: 13,
+    wordCountEstimate: 1900,
     featured: true,
     relatedSlugs: ['2008-global-financial-crisis', '1987-black-monday', '2020-sensex-crash'],
     sources: [
@@ -813,6 +1056,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: false,
     category: 'inflation_rate_hike',
     categoryLabel: 'Persistent 40-Year Inflation & Aggressive Fed Rate Hikes',
+    
+    primaryKeyword: '2022 bear market',
+    relatedKeywords: ['2022 stock market crash', 'Federal Reserve rate hike selloff'],
+    seoTitle: '2022 Bear Market: Inflation Surge & Tech Stock De-rating',
+    metaDescription: 'Explore the 2022 bear market: 40-year-high inflation, 425 bps of Federal Reserve interest rate hikes, NASDAQ sell-off, and the 24-month recovery to new highs.',
+    featuredImage: img2022,
+    imageAlt: 'Financial news monitor and NASDAQ MarketSite ticker displaying 40-year high inflation graphics and interest rate hikes in 2022',
+    imageCaption: 'Broadcast screens in 2022 detailing the fastest global rate-hiking cycle in four decades and its impact on equities.',
+
+    aeoQuestions: [
+      {
+        question: 'What Caused the 2022 Global Bear Market?',
+        directAnswer: 'The 2022 bear market was driven by 40-year-high inflation (US CPI reaching 9.1%) that compelled the Federal Reserve to enact 425 basis points of interest rate hikes in nine months, severely compressing valuation multiples.',
+        supportingDetails: 'Unprofitable technology companies, cryptocurrencies, and high-duration growth equities that had boomed on zero interest rates were de-rated as the risk-free discount rate surged, while Russia’s war in Ukraine ignited an energy crisis.',
+        sources: 'Bank for International Settlements (Annual Economic Report 2023).'
+      },
+      {
+        question: 'Why Did the Classic 60/40 Portfolio Fail in 2022?',
+        directAnswer: 'The 60/40 balanced portfolio suffered its worst year in 90 years because equities and government bonds fell simultaneously under persistent inflationary pressure.',
+        supportingDetails: 'Traditionally, sovereign bonds provide a flight-to-safety cushion when equities decline. However, when inflation is the primary macroeconomic driver, rising yields cause bond prices to plunge alongside stocks.',
+        sources: 'NBER Working Paper Series on Asset Class Correlations.'
+      }
+    ],
+
     indexName: 'S&P 500 Index / NASDAQ Composite',
     indexTicker: '^GSPC / ^IXIC',
     currency: 'USD',
@@ -823,7 +1090,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -25.4,
     intradayMaxDecline: '-27.5% intraday on S&P 500; NASDAQ dropped -33.1% closing (-36.4% intraday)',
     durationDays: 282,
-    recoveryMonths: 24, // January 2024
+    recoveryMonths: 24,
     recoveryDate: 'January 19, 2024',
     summary: 'Following the unprecedented monetary expansion of the pandemic, US consumer inflation spiked to a 40-year high of 9.1% in June 2022, amplified by the Russian invasion of Ukraine and persistent supply chain bottlenecks. The Federal Reserve abandoned its "transitory inflation" stance and executed four consecutive 75-basis-point interest rate hikes, lifting the fed funds rate from 0% to over 4.5% in nine months. The resulting bond crash and equity valuation compression generated a grinding bear market.',
     historicalContext: 'During 2021, speculative excess reached fever pitch: SPACs, zero-revenue EV companies, meme stocks, and cryptocurrencies surged. Central banks had maintained near-zero rates and continued asset purchases well into late 2021 despite accelerating inflation. When the Fed acknowledged in early 2022 that inflation was entrenched, it launched the fastest monetary tightening cycle since Paul Volcker in 1980.',
@@ -903,6 +1170,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: true,
     category: 'fraud_structural',
     categoryLabel: 'Securities Fraud, Bank Manipulation & Settlement Breakdown',
+    
+    primaryKeyword: 'Harshad Mehta 1992 scam crash',
+    relatedKeywords: ['1992 Indian stock market crisis', 'BSE Sensex 1992 crash'],
+    seoTitle: '1992 Harshad Mehta Scam: BSE Sensex Crash & SEBI Reforms',
+    metaDescription: 'Discover the full story of the 1992 Harshad Mehta securities scam, fraudulent Bank Receipts, the 54% BSE Sensex crash, and the birth of modern SEBI regulation.',
+    featuredImage: img1992,
+    imageAlt: 'Trading ring on the floor of the Bombay Stock Exchange in 1992 during the Harshad Mehta securities scam crisis',
+    imageCaption: 'The trading floor of the Bombay Stock Exchange in April 1992 as the Harshad Mehta securities scandal was uncovered.',
+
+    aeoQuestions: [
+      {
+        question: 'How Did Harshad Mehta Manipulate the Stock Market in 1992?',
+        directAnswer: 'Harshad Mehta manipulated the market by issuing fake, unbacked Bank Receipts (BRs) through small cooperative banks to siphon thousands of crores from commercial banks into speculative equities.',
+        supportingDetails: 'Using the borrowed banking liquidity, Mehta aggressively cornered stocks like Associated Cement Companies (ACC), driving its price from ₹200 to over ₹9,000 based on his fraudulent "replacement cost theory". When journalist Sucheta Dalal broke the story in April 1992, the liquidity pipe froze, causing the Sensex to collapse by 54%.',
+        sources: 'Joint Parliamentary Committee (JPC) Report (1993); Sucheta Dalal, The Scam.'
+      },
+      {
+        question: 'What Structural Reforms Did India Introduce After the 1992 Scam?',
+        directAnswer: 'The 1992 crisis directly prompted India to grant statutory enforcement powers to SEBI, establish the electronic National Stock Exchange (NSE), and introduce dematerialized shares via NSDL.',
+        supportingDetails: 'The archaic Controller of Capital Issues was abolished, open-outcry badla trading was eliminated, and paper-based settlement was replaced by screen-based automated electronic matching.',
+        sources: 'Reserve Bank of India (Janakiraman Committee Reports).'
+      }
+    ],
+
     indexName: 'BSE Sensex (S&P BSE SENSEX)',
     indexTicker: '^BSESN',
     currency: 'INR',
@@ -913,7 +1204,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -54.4,
     intradayMaxDecline: '-12.7% single-day (April 28, 1992) following initial investigative revelations',
     durationDays: 370,
-    recoveryMonths: 28, // August 1994
+    recoveryMonths: 28,
     recoveryDate: 'August 1994',
     summary: 'In 1991–1992, broker Harshad Mehta exploited structural loopholes in the Indian banking system by siphoning an estimated ₹4,000–5,000 crore from interbank government securities transactions using fake and unbacked Bank Receipts (BRs). Mehta funneled this immense liquidity into the Bombay Stock Exchange, driving stocks like Associated Cement Companies (ACC) from ₹200 to over ₹9,000. When journalist Sucheta Dalal exposed the scam in April 1992, the BSE Sensex collapsed by 54%, freezing the exchange and sparking the modern structural overhaul of Indian securities regulation.',
     historicalContext: 'In 1991, India faced a severe balance of payments crisis that forced the pledge of sovereign gold reserves and initiated historic economic liberalization under Prime Minister P.V. Narasimha Rao and Finance Minister Dr. Manmohan Singh. The domestic capital market was still governed by the archaic Controller of Capital Issues (CCI), floor trading with open outcry, physical paper share certificates, and an opaque 14-day badla settlement system.',
@@ -991,6 +1282,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: true,
     category: 'credit_crisis',
     categoryLabel: 'Global Liquidity Contagion & FII Capital Flight',
+    
+    primaryKeyword: '2008 Sensex crash',
+    relatedKeywords: ['2008 Indian stock market crash', 'BSE Sensex 64 percent drop'],
+    seoTitle: '2008 Sensex Crash: FII Outflows & Dalal Street Recovery',
+    metaDescription: 'Analyze the 2008 Sensex crash: how foreign capital flight and real estate leverage plunged Indian equities 64%, followed by the 34-month recovery.',
+    featuredImage: imgSensex2008,
+    imageAlt: 'Crowd of Indian investors looking up at the digital electronic stock board outside the Bombay Stock Exchange in 2008',
+    imageCaption: 'Investors outside the Bombay Stock Exchange on Dalal Street in October 2008 watching the Sensex drop below 8,500.',
+
+    aeoQuestions: [
+      {
+        question: 'Why Did the BSE Sensex Crash 64% in 2008?',
+        directAnswer: 'The BSE Sensex crashed 64% in 2008 primarily because Foreign Institutional Investors (FIIs) pulled out over $13 billion to cover losses in Western subprime markets, colliding with overleveraged domestic real estate and infrastructure sectors.',
+        supportingDetails: 'Domestic retail traders held highly leveraged single-stock futures on the NSE, and promoters had pledged personal equity to fund massive debt expansions. As foreign liquidity vanished, forced margin selling drove blue chips down 60% to 90%.',
+        sources: 'Reserve Bank of India Annual Report 2008–09; SEBI Statistics.'
+      },
+      {
+        question: 'How Long Did It Take the Sensex to Recover After 2008?',
+        directAnswer: 'The BSE Sensex took 34 months—from the October 2008 low to November 5, 2010—to reach a new all-time high of 21,210.',
+        supportingDetails: 'The recovery was aided by emergency RBI liquidity injections, CRR and repo rate cuts, and the decisive May 2009 general election that triggered a historic 17% upper circuit in a single session.',
+        sources: 'BSE India Historical Index Series.'
+      }
+    ],
+
     indexName: 'BSE Sensex (S&P BSE SENSEX)',
     indexTicker: '^BSESN',
     currency: 'INR',
@@ -1001,7 +1316,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -63.7,
     intradayMaxDecline: '-10.5% circuit breaker halt on January 21–22, 2008 ("Black Monday in India")',
     durationDays: 291,
-    recoveryMonths: 34, // November 2010
+    recoveryMonths: 34,
     recoveryDate: 'November 5, 2010',
     summary: 'Between 2003 and January 2008, the Indian stock market enjoyed a breathtaking bull run, rising from 3,000 to over 21,000 on the back of 9% GDP growth, infrastructure capital spending, and aggressive Foreign Institutional Investor (FII) inflows. However, when the global credit crunch struck in 2008, foreign funds pulled out over $13 billion to cover losses in their home markets. High domestic margin leverage in real estate and infrastructure stocks triggered a devastating 64% decline.',
     historicalContext: 'India was the premier emerging market growth darling of the 2000s. The Reliance Power IPO in January 2008 was subscribed within 60 seconds, attracting $27 billion in retail and institutional demand. Promoters borrowed heavily against their own pledged shares, and retail traders made extensive use of single-stock futures on the NSE with 5x leverage.',
@@ -1080,6 +1395,30 @@ export const crashesData: CrashArticle[] = [
     isIndia: true,
     category: 'pandemic_shock',
     categoryLabel: 'Pandemic Lockdowns, FII Flight & Retail Transformation',
+    
+    primaryKeyword: '2020 Sensex crash',
+    relatedKeywords: ['March 2020 Indian market crash', 'COVID-19 Sensex circuit breaker'],
+    seoTitle: '2020 Sensex Crash: March Lockdowns & V-Shaped Rebound',
+    metaDescription: 'Complete analysis of the March 2020 Sensex crash: nationwide lockdowns, lower circuit breakers, FPI outflows, and the explosive 8-month recovery to 50,000.',
+    featuredImage: imgSensex2020,
+    imageAlt: 'Trading room monitors in Mumbai displaying BSE Sensex down 13.88% with trading halt in effect during the March 2020 pandemic crash',
+    imageCaption: 'Trading room monitors displaying the 10% lower circuit breaker trading halt on March 23, 2020, on Dalal Street.',
+
+    aeoQuestions: [
+      {
+        question: 'Why Did Indian Stock Markets Trigger Lower Circuit Breakers in March 2020?',
+        directAnswer: 'Indian markets triggered the 10% lower circuit breaker on March 13 and March 23, 2020, because the imposition of the world\'s largest nationwide lockdown coincided with record monthly foreign outflows (₹61,973 crore).',
+        supportingDetails: 'Passenger rail, domestic air travel, factories, and retail shops were halted overnight. Investors feared widespread corporate defaults and banking non-performing loans (NPAs) until the RBI enacted aggressive moratoriums and liquidity injections.',
+        sources: 'Reserve Bank of India Monetary Policy Committee; SEBI Circular on Margin Framework (2020).'
+      },
+      {
+        question: 'How Did the Indian Retail Investor Base Change After March 2020?',
+        directAnswer: 'The March 2020 crash marked a structural turning point in Indian finance, expanding active Demat accounts from 4 crore in early 2020 to over 15 crore by 2024.',
+        supportingDetails: 'Millions of young retail investors opened discount brokerage accounts during lockdowns to buy equities at discounted valuations. Consistent domestic mutual fund SIPs surpassed ₹15,000–20,000 crore per month, creating a permanent domestic cushion against foreign selling.',
+        sources: 'NSDL and CDSL Investor Statistics; Association of Mutual Funds in India (AMFI).'
+      }
+    ],
+
     indexName: 'BSE Sensex (S&P BSE SENSEX)',
     indexTicker: '^BSESN',
     currency: 'INR',
@@ -1090,7 +1429,7 @@ export const crashesData: CrashArticle[] = [
     declinePercentage: -38.1,
     intradayMaxDecline: '-13.2% single-day (March 23, 2020); Upper and lower 10% circuit breakers triggered',
     durationDays: 63,
-    recoveryMonths: 8, // November 2020
+    recoveryMonths: 8,
     recoveryDate: 'November 9, 2020',
     summary: 'The March 2020 Indian stock market crash was the most concentrated sell-off in modern Indian history. In just 40 trading sessions between mid-February and March 23, 2020, the BSE Sensex collapsed by 38.1%, erasing over ₹50 lakh crore ($650 billion) of investor wealth. Foreign portfolio investors pulled out a record ₹61,973 crore ($8.4 billion) in March alone. The market triggered both lower 10% circuit breakers on March 13 and March 23 before embarking on an explosive multi-year bull run.',
     historicalContext: 'India’s economy entered 2020 contending with an ongoing shadow-banking (NBFC) crisis following the 2018 IL&FS default, sluggish consumption, and bank non-performing asset (NPA) cleanup. However, the Sensex had hit fresh records in January 2020 on corporate tax cuts announced in late 2019. When the Indian government announced the world’s largest and strictest nationwide lockdown on March 24, all domestic passenger transit, manufacturing, and commerce ceased.',
@@ -1159,7 +1498,6 @@ export const crashesData: CrashArticle[] = [
   }
 ];
 
-// Contextual historical speculative bubbles & precursors (clearly distinguished from modern stock markets)
 export const historicalBubblesAndContext = [
   {
     id: '1637-tulip-mania',

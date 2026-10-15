@@ -23,6 +23,7 @@ import { GlossaryPage } from './pages/GlossaryPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { DisclaimerPage } from './pages/DisclaimerPage';
+import { SEOReportPage } from './pages/SEOReportPage';
 import { AlertTriangle, Home as HomeIcon } from 'lucide-react';
 
 function NotFound() {
@@ -89,6 +90,9 @@ export default function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/disclaimer" element={<DisclaimerPage />} />
+            
+            {/* Academic SEO Assignment Report */}
+            <Route path="/seo-report" element={<SEOReportPage />} />
 
             {/* 404 Fallback */}
             <Route path="*" element={<NotFound />} />

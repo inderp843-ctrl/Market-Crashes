@@ -16,9 +16,16 @@ import {
 import img1929 from '../assets/images/wall_street_1929_1791947977625.jpg';
 import img1987 from '../assets/images/black_monday_1987_1791948002332.jpg';
 import img1992 from '../assets/images/harshad_mehta_1992_1791948063715.jpg';
+import img1997 from '../assets/images/asian_financial_crisis_1997_1792030718243.jpg';
 import img2000 from '../assets/images/dot_com_bubble_2000_1791948123765.jpg';
 import img2008 from '../assets/images/financial_crisis_2008_1791948029011.jpg';
+import imgSensex2008 from '../assets/images/sensex_crash_2008_1792030969966.jpg';
+import img2010 from '../assets/images/flash_crash_2010_1792030756589.jpg';
+import img2015 from '../assets/images/china_crash_2015_1792030817079.jpg';
+import img2018 from '../assets/images/market_selloff_2018_1792030861371.jpg';
 import img2020 from '../assets/images/covid_market_crash_2020_1791948090410.jpg';
+import imgSensex2020 from '../assets/images/sensex_crash_2020_1792031027143.jpg';
+import img2022 from '../assets/images/bear_market_2022_1792030916632.jpg';
 
 interface SlideItem {
   id: string;
@@ -83,6 +90,21 @@ const slides: SlideItem[] = [
     keyStat: 'Catalyzed SEBI & NSE Creation'
   },
   {
+    id: '1997',
+    image: img1997,
+    year: 1997,
+    title: 'Asian Financial Crisis of 1997: Currency Peg Collapse',
+    shortTitle: 'Asian Crisis 1997',
+    country: 'East Asia & Global',
+    decline: '-70% Regional',
+    dateRange: '1997 – 1998',
+    indexName: 'SET, Hang Seng, KOSPI',
+    categoryLabel: 'Sovereign Contagion & Currency Devaluation',
+    tagline: 'The unpegging of the Thai Baht triggered cross-border sovereign debt panics and IMF austerity across Asia.',
+    routePath: '/crashes/1997-asian-financial-crisis',
+    keyStat: 'Thai Baht Lost 50% Value'
+  },
+  {
     id: '2000',
     image: img2000,
     year: 2000,
@@ -113,6 +135,66 @@ const slides: SlideItem[] = [
     keyStat: 'TED Spread Hit Record 464 bps'
   },
   {
+    id: '2008-sensex',
+    image: imgSensex2008,
+    year: 2008,
+    title: 'Indian Market Crash of 2008: The Great Sensex Unwind',
+    shortTitle: 'Sensex Crash 2008',
+    country: 'India',
+    decline: '-63.7%',
+    dateRange: 'Jan 2008 – Oct 2008',
+    indexName: 'BSE Sensex',
+    categoryLabel: 'FII Capital Outflows & Global Contagion',
+    tagline: 'Foreign institutional investor liquidity flight pulled the Sensex from 21,000 down to 7,697.',
+    routePath: '/crashes/india/2008-sensex-crash',
+    keyStat: '32 Months Recovery to Highs'
+  },
+  {
+    id: '2010',
+    image: img2010,
+    year: 2010,
+    title: 'The Flash Crash of 2010: High-Frequency Disconnect',
+    shortTitle: 'Flash Crash 2010',
+    country: 'United States',
+    decline: '-9.2% in 20 Mins',
+    dateRange: 'May 6, 2010',
+    indexName: 'Dow Jones (DJIA)',
+    categoryLabel: 'HFT Liquidity Withdrawal & Spoofing',
+    tagline: 'Nearly 1,000 points erased in minutes as algorithmic market makers pulled quotes during high volatility.',
+    routePath: '/crashes/2010-flash-crash',
+    keyStat: 'Recovered 600 Pts Same Day'
+  },
+  {
+    id: '2015',
+    image: img2015,
+    year: 2015,
+    title: 'China Stock Market Crash of 2015: Margin Squeeze',
+    shortTitle: 'China Crash 2015',
+    country: 'China',
+    decline: '-43.3%',
+    dateRange: 'June – Aug 2015',
+    indexName: 'Shanghai Composite',
+    categoryLabel: 'Shadow Margin Lending & State Interventions',
+    tagline: 'Unregulated umbrella trusts and peer-to-peer margin loans triggered massive retail unwinds in Shanghai.',
+    routePath: '/crashes/2015-china-stock-market-crash',
+    keyStat: 'Over 1,400 Stocks Halted'
+  },
+  {
+    id: '2018',
+    image: img2018,
+    year: 2018,
+    title: '2018 Global Market Sell-Off: Volmageddon & QT',
+    shortTitle: 'Market Sell-Off 2018',
+    country: 'United States & Global',
+    decline: '-19.8%',
+    dateRange: 'Feb – Dec 2018',
+    indexName: 'S&P 500 Index',
+    categoryLabel: 'Short-Volatility Blowup & Fed Tightening',
+    tagline: 'The XIV inverse VIX product collapsed 96% in hours, culminating in the Christmas Eve 2018 market low.',
+    routePath: '/crashes/2018-market-selloff',
+    keyStat: '4-Month Swift Roundtrip Recovery'
+  },
+  {
     id: '2020',
     image: img2020,
     year: 2020,
@@ -126,6 +208,36 @@ const slides: SlideItem[] = [
     tagline: 'The fastest 30% collapse in financial history, followed by unlimited QE and a historic 5-month V-shaped recovery.',
     routePath: '/crashes/2020-covid-market-crash',
     keyStat: 'Level 1 Breakers Tripped 4 Times'
+  },
+  {
+    id: '2020-sensex',
+    image: imgSensex2020,
+    year: 2020,
+    title: 'Indian Market Crash of March 2020: Lockdown Shock',
+    shortTitle: 'Sensex Crash 2020',
+    country: 'India',
+    decline: '-38.1%',
+    dateRange: 'Feb 2020 – Mar 2020',
+    indexName: 'BSE Sensex',
+    categoryLabel: 'Pandemic Circuit Breakers & Domestic DII Inflows',
+    tagline: '45-minute exchange trading halts triggered twice as retail SIP investors spearheaded an epic 8-month turnaround.',
+    routePath: '/crashes/india/2020-sensex-crash',
+    keyStat: '8 Months to Fresh All-Time Highs'
+  },
+  {
+    id: '2022',
+    image: img2022,
+    year: 2022,
+    title: 'Global Bear Market of 2022: The Great Inflation Rate Shock',
+    shortTitle: 'Bear Market 2022',
+    country: 'Global',
+    decline: '-25.4% S&P / -33.1% NASDAQ',
+    dateRange: 'Jan 2022 – Oct 2022',
+    indexName: 'S&P 500 & NASDAQ 100',
+    categoryLabel: '40-Year High Inflation & 500 bps Rate Hikes',
+    tagline: 'Post-pandemic supply chain crunches and aggressive global central bank tightening ended the zero-rate era.',
+    routePath: '/crashes/2022-bear-market',
+    keyStat: 'Simultaneous Bond & Equity Drawdown'
   }
 ];
 

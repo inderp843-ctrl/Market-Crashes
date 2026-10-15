@@ -27,5 +27,6 @@
   <url><loc>https://marketcrasharchive.org/glossary</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://marketcrasharchive.org/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://marketcrasharchive.org/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://marketcrasharchive.org/seo-report</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://marketcrasharchive.org/disclaimer</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
